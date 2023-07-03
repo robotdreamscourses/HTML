@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form Elementleri</title>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="/">Ana Sayfa</a>
+				<a href="/blog">Body Elementleri</a>
+				<a href="/demo">Demo Sayfa</a>
+				<a href="/images">Görsel ve Video</a>
+				<a href="/forms">Form Elementleri</a>
+			</nav>
+		</header>
+
+		<main>
+			<hr>
+			<strong style="font-size: 48px;">Formlar</strong>
+			<hr>
+			<form action="?" method="GET">
+				<div>
+					<label for="name">Adınız</label>
+					<input type="text" name="name" id="name" placeholder="Adınızı yazınız" required>
+				</div>
+				<div>
+					<label for="lastname">Soyadınız</label>
+					<input type="text" name="lastname" id="lastname" placeholder="Soyadınızı yazınız" required>
+				</div>
+				<div>
+					<label for="age">Yaşınız</label>
+					<input type="number" name="age" id="age" min="18" max="88" step="10">
+				</div>
+				<div>
+					<label for="birthday">Doğum Tarihiniz</label>
+					<input type="date" name="birthday" id="birthday">
+				</div>
+				<div>
+					<label>Favori Yemeğiniz</label>
+					<label for="pizza">🍕 Pizza</label>
+					<input type="radio" id="pizza" name="food" value="🍕">
+					<label for="hamburger">🍔 Hamburger</label>
+					<input type="radio" id="hamburger" name="food" value="🍔">
+					<label for="sandwich">🥪 Sandviç</label>
+					<input type="radio" id="sandwich" name="food" value="🥪">
+				</div>
+				<div>
+					<label for="color">Favori Renginiz</label>
+					<select name="color" id="color">
+						<option value="red">🍎 Kırmızı</option>
+						<option value="blue">🦕 Mavi</option>
+						<option value="green">🥦 Yeşil</option>
+					</select>
+				</div>
+				<div>
+					<label for="extrapillow">Extra yastık</label>
+					<input type="checkbox" name="extrapillow" id="extrapillow">
+				</div>
+
+				<button type="submit">Kaydet</button>
+			</form>
+		</main>
+	</body>
+
+</html>

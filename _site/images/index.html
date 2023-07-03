@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<nav>
+				<a href="/">Ana Sayfa</a>
+				<a href="/blog">Body Elementleri</a>
+				<a href="/demo">Demo Sayfa</a>
+				<a href="/images">Görsel ve Video</a>
+				<a href="/forms">Form Elementleri</a>
+			</nav>
+		</header>
+
+		<main>
+			<hr>
+			<strong style="font-size: 48px;">Görsel ve Video</strong>
+			<hr>
+
+			<video controls autoplay loop width="500" poster="https://placehold.co/100x100?text=Video Kapak Görseli">
+				<source src="/img/flower.webm" type="video/webm">
+				<source src="/img/flower.mp4" type="video/mp4">
+			</video>
+
+			<hr>
+
+			<video src="/img/flower.mp4" controls autoplay loop muted></video>
+
+			<hr>
+
+			<figure style="max-width: 600px;">
+				<img src="https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
+						 alt="Rockefeller Plaza, New York, United States" style="max-width: 100%">
+				<figcaption>This, like my last New York shot, was taken during my last trip to New York City. This was taken
+					from the
+					top of the
+					Rockefeller Building looking towards the Empire State Building. If you look close you can see the Statue of
+					Liberty
+					in
+					the upper back right.</figcaption>
+			</figure>
+
+			<!-- Bu bölümde source(kaynak) boş bırakıldığından tarayıcıda çıktısı gözükmeyecektir -->
+			<picture>
+				<source media="(min-width: )" srcset="">
+				<source media="(min-width: )" srcset="" sizes="">
+				<source media="(min-width: )" srcset="" type="image/">
+				<source sizes="" srcset="">
+				<source sizes="" srcset="" type="image/">
+				<source src="" type="">
+				<source srcset="">
+				<source srcset="" type="image/">
+			</picture>
+
+			<hr>
+
+			<picture>
+				<source media="(min-width: 1200px)" srcset="
+				https://placehold.co/1200x1200 1x,
+				https://placehold.co/2400x2400 2x
+				">
+				<source media="(min-width: 600px)" srcset="https://placehold.co/300x300">
+				<img src="https://placehold.co/100x100" alt="">
+			</picture>
+
+			<hr>
+
+			<picture>
+				<source srcset="https://placehold.co/300x300" type="image/avif" />
+				<source srcset="https://placehold.co/200x200" type="image/webp" />
+				<img src="https://placehold.co/100x100" alt="">
+			</picture>
+
+			<hr>
+
+			<img src="https://placehold.co/100x100" alt="Place Holder" srcset="
+		https://placehold.co/300x300 300w,
+		https://placehold.co/600x600 600w,
+		https://placehold.co/900x900 900w,
+		https://placehold.co/1200x1200 1200w,
+		" sizes="
+		(min-width: 1200px) 800px,
+		(min-width: 300px) 300px,
+		100vw
+		">
+		</main>
+
+	</body>
+
+</html>
